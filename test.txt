@@ -1,2 +1,5 @@
-wegweg
-egasegseg
+git push https://github.com/happy-joyboy/Nftar.git
+git add .
+ git commit -m "add file"
+ git push --set-upstream https://github.com/happy-joyboy/Nftar.git main
+ git push https://github.com/happy-joyboy/Nftar.git
