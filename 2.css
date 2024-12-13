@@ -68,13 +68,6 @@ nav ul li a {
     color: #c6c60a;
     font-size: 1.2rem;
 }
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
