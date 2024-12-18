@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/restaurant_4892495.png" type="image/x-icon" />
+    <link rel="stylesheet" href="booking.css">
+    <title>NftaR</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nftar</h1>
+        <p>Delicious Food, Exceptional Service</p>
+        <!-- <div id="logo"></div> -->
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="booking.html">booking</a></li>
+            <li><a href="#rating">rating</a></li>
+        </ul>
+    </nav>
+    <form class="container">
+
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name"required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email"required>
+        <label for="phone">Phone number</label>
+        <input id="phone" type="text" placeholder="Enter your phone number"required>
+        <label for="number of guests">Number of guests</label>
+        <input type="number" placeholder="Enter number of guests"required>
+        <label for="date">Date</label>
+        <input id="date" type="date" placeholder="Enter date"required>
+        <label for="time">Time</label>
+        <input id="time" type="number" min="1" max="12"required>
+        <div>
+
+            <input type="radio" name="mode" value="am">
+            <label for="mode">AM</label>
+        </div>
+        <div>
+
+            <input type="radio" name="mode" value="pm">
+            <label for="mode">PM</label>
+        </div>
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+
+
+
+</body>
+
+</html>

@@ -44,48 +44,65 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+input{
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px;
+    height: 25px;
 
-img{
-    width: 200px;
-    height: 200px;
-    padding: 10px;
 }
-main {
+label{
+    text-align: left;
+    display: inline-block;
+    margin: 5px;
+}
+.container{
     background: url('./images/hero.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
-}
-.menuheader{
-    list-style-type: none;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 30px;
-    column-gap: 100px;
-}
-div{
     display: block;
-}
-.menuitem{
-    background-color: black;
-    border-radius: 10px;
+    padding: 20px;
     color: #f3f308;
+    text-align: left;
+    font-weight: bold;
+}
+input[type="radio"]{
+    width: auto;
+    justify-content: left;
 
 }
-h2{
+
+input[type="submit"],input[type="reset"]{
+    background-color: #080808;
     color: #f3f308;
-    font-style: italic;
-    padding: 10px;
+    font-weight: bold;
+    height: 30px;
 }
-.menuitem:hover{
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color:#f3f308;
+    color:#080808;
+    font-weight: bold;
+}
+input[type="submit"]:focus,input[type="reset"]:focus{
+    background-color:#f3f308;
+    color:#080808;
+    font-weight: bold;
+}
+input:hover{
     background-color: #f0f076;
-    color: #080808;
-    transform: scale(1.05);
 }
+input:focus{
+    background-color: #f3f308;
+}
+div{
+    display: inline-block;
+}
+
+
