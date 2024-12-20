@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+}
+
+table,
+td {
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    width: 100px;
+}
+
+caption {
+    font-size: 80px;
+    background-color: rgba(255, 255, 255, 0.553);
+    border-radius: 30px;
+    margin: 20px 100px 40px;
+    transition: 0.3s;
+    box-shadow: 0 0 2px black;
+}
+
+caption:hover {
+    font-size: 82px;
+    background-color: rgba(255, 255, 255, 0.826);
+    box-shadow: 0 0 2px black;
+}
+
+img {
+    width: 270px;
+    height: 480px;
+    border: 2px rgba(255, 255, 255, 0.553) solid;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 2px black;
+}
+
+img:hover {
+    width: 279px;
+    height: 496px;
+    border: 5px  rgba(255, 255, 255, 0.826) solid;
+    cursor: pointer;
+    box-shadow: 0 0 2px black;
+}
+
+p {
+    font-size: 30px;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.553);
+    border-radius: 15px;
+    margin: 40px 100px;
+    box-shadow: 0 0 2px black;
+}
+
+p:hover {
+    font-size: 32px;
+    background-color: rgba(255, 255, 255, 0.826);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

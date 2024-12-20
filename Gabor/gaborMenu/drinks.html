@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="categories.css">
+</head>
+
+<body>
+    <table>
+        <caption>Drinks</caption>
+        <tr>
+            <td><img src="Drinks/Coffee.jpeg" alt="Coffee">
+                <p>Coffee</p>
+                <p>
+                    <del>$3.99</del>
+                    $3.59
+                </p>
+                <button id="Coffee">Reserve</button>
+            </td>
+            <td>
+                <img src="Drinks/Espresso.jpeg" alt="Espresso">
+                <p>Espresso</p>
+                <p>
+                    <del>$2.99</del>
+                    $2.69
+                </p>
+                <button id="Espresso">Reserve</button>
+            </td>
+            <td>
+                <img src="Drinks/Tea.jpeg" alt="Tea">
+                <p>Tea</p>
+                <p>
+                    <del>$2.49</del>
+                    $2.37
+                </p>
+                <button id="Tea">Reserve</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="Drinks/Pineapple Juice.jpeg" alt="Pineapple Juice">
+                <p>Pineapple Juice</p>
+                <p>
+                    <del>$4.99</del>
+                    $4.49
+                </p>
+                <button id="Pineapple Juice">Reserve</button>
+            </td>
+            <td>
+                <img src="Drinks/Lemonade.jpeg" alt="Lemonade">
+                <p>Lemonade</p>
+                <p>
+                    <del>$3.49</del>
+                    $2.97
+                </p>
+                <button id="Lemonade">Reserve</button>
+            </td>
+            <td>
+                <img src="Drinks/Apple Juice.jpeg" alt="Apple Juice">
+                <p>Apple Juice</p>
+                <p>
+                    <del>$3.99</del>
+                    $3.59
+                </p>
+                <button id="Apple Juice">Reserve</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function showReservation(item) {
+            alert(`${item} is reserved.`);
+        }
+        document.getElementById('Coffee').addEventListener('click', () => showReservation('Coffee'));
+        document.getElementById('Espresso').addEventListener('click', () => showReservation('Espresso'));
+        document.getElementById('Tea').addEventListener('click', () => showReservation('Tea'));
+        document.getElementById('Pineapple Juice').addEventListener('click', () => showReservation('Pineapple Juice'));
+        document.getElementById('Lemonade').addEventListener('click', () => showReservation('Lemonade'));
+        document.getElementById('Apple Juice').addEventListener('click', () => showReservation('Apple Juice'));
+    </script>
+</body>
+
+</html>
