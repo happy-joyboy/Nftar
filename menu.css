@@ -24,9 +24,6 @@ ul img{
     row-gap: 30px;
     justify-content: space-around;
 }
-div{
-    display: block;
-}
 .menuitem{
     background-color: black;
     border-radius: 10px;
@@ -34,7 +31,7 @@ div{
 
 }
 h2{
-    border:ipx solid black;
+    border:1px solid black;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.53);
     color: gold;
