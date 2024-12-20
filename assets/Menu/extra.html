@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+        body {
+            background-color: black;
+            background-image: url(Background.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+        }
+
+        table,
+        td {
+            width: 100%;
+            text-align: center;
+        }
+
+        td {
+            width: 100px;
+
+        }
+
+        caption {
+            font-size: 80px;
+            background-color: rgba(255, 255, 255, 0.553);
+            border-radius: 30px;
+            margin: 20px 100px 40px;
+            transition: 0.7s;
+            box-shadow: 0 0 2px black;
+        }
+
+        caption:hover {
+            font-size: 85px;
+            background-color: rgba(255, 255, 255, 0.826);
+            box-shadow: 0 0 2px black;
+        }
+
+        img {
+            width: 340px;
+            height: 340px;
+            border: 20px rgba(255, 255, 255, 0.553) solid;
+            border-radius: 30px;
+            transition: 0.7s;
+            box-shadow: 0 0 5px white;
+            box-shadow: 0 0 2px black;
+        }
+
+        img:hover {
+            width: 350px;
+            height: 350px;
+            border: 20px rgba(255, 255, 255, 0.826) solid;
+            cursor: pointer;
+            box-shadow: 0 0 2px black;
+
+        }
+
+        p {
+            font-size: 40px;
+            transition: 0.7s;
+            background-color: rgba(255, 255, 255, 0.553);
+            border-radius: 15px;
+            margin: 40px 100px;
+            box-shadow: 0 0 2px black;
+        }
+
+        p:hover {
+            font-size: 45px;
+            background-color: rgba(255, 255, 255, 0.826);
+        }
+
+
+        button {
+            width: 290px;
+            height: 50px;
+            margin-bottom: 40px;
+            border: none;
+            border-radius: 15px;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color:#f4a560a0;
+            box-shadow: 0 0 2px black;
+            transition: 0.7s;
+        }
+
+        button:hover {
+            width: 300px;
+            height: 60px;
+            font-size: 45px;
+            background-color:#F4A460;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Extra</caption>
+        <tr>
+            <td><img src="Extra/Coleslaw.jpeg" alt="Coleslaw">
+                <p>Coleslaw</p>
+                <p>
+                    $4.49
+                </p>
+                <button id="Coleslaw">Reserve</button>
+            </td>
+            <td><img src="Extra/French Fries.jpeg" alt="French Fries">
+                <p>French Fries</p>
+                <p>
+                    $3.99
+                </p>
+                <button id="French Fries">Reserve</button>
+            </td>
+            <td><img src="Extra/Ketchup.jpeg" alt="Ketchup">
+                <p>Ketchup</p>
+                <p>
+                    $1.49
+                </p>
+                <button id="Ketchup">Reserve</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="Extra/Rice.jpeg" alt="Rice">
+                <p>Rice</p>
+                <p>
+                    $2.99
+                </p>
+                <button id="Rice">Reserve</button>
+            </td>
+            <td><img src="Extra/Garlic Bread.jpeg" alt="Garlic Bread">
+                <p>Garlic Bread</p>
+                <p>
+                    $4.99
+                </p>
+                <button id="Garlic Bread">Reserve</button>
+            </td>
+            <td><img src="Extra/Salad.jpeg" alt="Salad">
+                <p>Salad</p>
+                <p>
+                    $6.49
+                </p>
+                <button id="Salad">Reserve</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function showReservation(item) {
+            alert(`${item} is reserved.`);
+        }
+        document.getElementById('Coleslaw').addEventListener('click', () => showReservation('Coleslaw'));
+        document.getElementById('French Fries').addEventListener('click', () => showReservation('French Fries'));
+        document.getElementById('Ketchup').addEventListener('click', () => showReservation('Ketchup'));
+        document.getElementById('Rice').addEventListener('click', () => showReservation('Rice'));
+        document.getElementById('Garlic Bread').addEventListener('click', () => showReservation('Garlic Bread'));
+        document.getElementById('Salad').addEventListener('click', () => showReservation('Salad'));
+    </script>
+</body>
+
+</html>
