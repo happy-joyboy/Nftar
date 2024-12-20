@@ -23,8 +23,11 @@ const headerbar =document.querySelector(".headerbar");
 bar.addEventListener("click",function(){
     setTimeout(()=>{
         cross.style.display="block";
+        cross.style.position="fixed";
+        cross.style.zIndex="1500";
     },200);
     headerbar.style.right ="0%";
+    headerbar.style.zIndex ="1500";
 })
 
 cross.addEventListener("click",function(){

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/assets/images/icon_shapes/Nftar_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    
+    <!-- <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="saeed.css">
+    <link rel="stylesheet" href="nav.css"> -->
+    <link rel="stylesheet" href="/assets/styles/mainStyle.css">
+    <link rel="stylesheet" href="/assets/styles/categories.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTAR</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="#"><li><i class="fa-solid fa-house-chimney"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-magnifying-glass" id="searchicon1"></i></li></a>
+                        <div class="search" id="searchinput1">
+                            <input type="search">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        <a href="#"><li><i class="fa-solid fa-user" id="user=mb"></i></li></a>
+                        
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="/nftar.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="menu.html"><li>Menu</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="booking.html"><li>Booking</li></a>
+                        <!-- <a href="#"><li>Rating</li></a> -->
+                    </ul>
+                </div>   
+            </div>
+            <div class="logo">
+                <img src="/assets/assets/images/logo/Nftar_logo.png" alt="logo">
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+            <div class="nav">
+                <ul>
+                    <a href="/nftar.html"><li>Home</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="booking.html"><li>Booking</li></a>
+                    <!-- <a href="#"><li>Rating</li></a> -->
+                </ul>
+            </div>
+            <div class="account">
+                <ul>
+                    <a href="#"><li><i class="fa-solid fa-house-chimney"></i></li></a>
+                    <a href="#"><li><i class="fa-solid fa-magnifying-glass" id="searchicon2"></i></li></a>
+                    <div class="search" id="searchinput2">
+                        <input type="search">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                    <a href="#"><li><i class="fa-solid fa-user" id="user"></i></li></a>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <table>
+        <caption>Drinks</caption>
+        <tr>
+            <td><img src="/assets/images/menu/Drinks/Coffee.jpeg" alt="Coffee">
+                <p>Coffee</p>
+                <p>
+                    <del>$3.99</del>
+                    $3.59
+                </p>
+                <button id="Coffee">Reserve</button>
+            </td>
+            <td>
+                <img src="/assets/images/menu/Drinks/Espresso.jpeg" alt="Espresso">
+                <p>Espresso</p>
+                <p>
+                    <del>$2.99</del>
+                    $2.69
+                </p>
+                <button id="Espresso">Reserve</button>
+            </td>
+            <td>
+                <img src="/assets/images/menu/Drinks/Tea.jpeg" alt="Tea">
+                <p>Tea</p>
+                <p>
+                    <del>$2.49</del>
+                    $2.37
+                </p>
+                <button id="Tea">Reserve</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="/assets/images/menu/Drinks/Pineapple Juice.jpeg" alt="Pineapple Juice">
+                <p>Pineapple Juice</p>
+                <p>
+                    <del>$4.99</del>
+                    $4.49
+                </p>
+                <button id="Pineapple Juice">Reserve</button>
+            </td>
+            <td>
+                <img src="/assets/images/menu/Drinks/Lemonade.jpeg" alt="Lemonade">
+                <p>Lemonade</p>
+                <p>
+                    <del>$3.49</del>
+                    $2.97
+                </p>
+                <button id="Lemonade">Reserve</button>
+            </td>
+            <td>
+                <img src="/assets/images/menu/Drinks/Apple Juice.jpeg" alt="Apple Juice">
+                <p>Apple Juice</p>
+                <p>
+                    <del>$3.99</del>
+                    $3.59
+                </p>
+                <button id="Apple Juice">Reserve</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function showReservation(item) {
+            alert(`${item} is reserved.`);
+        }
+        document.getElementById('Coffee').addEventListener('click', () => showReservation('Coffee'));
+        document.getElementById('Espresso').addEventListener('click', () => showReservation('Espresso'));
+        document.getElementById('Tea').addEventListener('click', () => showReservation('Tea'));
+        document.getElementById('Pineapple Juice').addEventListener('click', () => showReservation('Pineapple Juice'));
+        document.getElementById('Lemonade').addEventListener('click', () => showReservation('Lemonade'));
+        document.getElementById('Apple Juice').addEventListener('click', () => showReservation('Apple Juice'));
+    </script>
+</body>
+
+</html>

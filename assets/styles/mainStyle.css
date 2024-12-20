@@ -11,6 +11,7 @@
 
 :root{
     --mainFontcolor: #FAB12F;
+    --color2: #333;
     --main-font: 'Source Sans Pro', sans-serif;
     --secondary-font: 'Herr Von Muellerhoff', cursive;
     --body-font: 'Cabin', sans-serif;
@@ -56,7 +57,11 @@ header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
+    text-align: center; 
+
+}
+header a{
+    color: var(--color2);
 }
 
 .headerbar{
@@ -142,7 +147,7 @@ header {
 
 /* hero section  */
 .hero {
-    background: url('/images/hero.jpg'); 
+    background: url('/assets/images/bg_random/hero.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
