@@ -1,74 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-header h1{
-    color: #f3f308;
-}
-header p{
-    color: #f0f076;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #080808;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #c6c60a;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-img{
+ul img{
     width: 200px;
     height: 200px;
     padding: 10px;
 }
-main {
+.container {
     background: url('./images/hero.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    display: flexbox;
     align-items: center;
     justify-content: center;
-    color: #fff;
     text-align: center;
+    padding: 20px;
+    color: gold;
 }
 .menuheader{
     list-style-type: none;
-    padding: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
     row-gap: 30px;
-    column-gap: 100px;
+    justify-content: space-around;
 }
 div{
     display: block;
@@ -76,16 +30,18 @@ div{
 .menuitem{
     background-color: black;
     border-radius: 10px;
-    color: #f3f308;
+    color: gold;
 
 }
 h2{
-    color: #f3f308;
+    border:ipx solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.53);
+    color: gold;
     font-style: italic;
-    padding: 10px;
 }
 .menuitem:hover{
-    background-color: #f0f076;
+    background-color: gold;
     color: #080808;
     transform: scale(1.05);
 }
