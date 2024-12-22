@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <link rel="icon" href="/assets/images/icon_shapes/Nftar_icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
-    <link rel="stylesheet" href="/assets/styles/booking.css">   
-    <!-- <link rel="stylesheet" href="2.css">
-    <link rel="stylesheet" href="saeed.css">
-    <link rel="stylesheet" href="nav.css"> -->
+<head>
+    <link rel="shortcut icon" href="/assets/images/icon_shapes/Nftar_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    
     <link rel="stylesheet" href="/assets/styles/mainStyle.css">
+    <link rel="stylesheet" href="/assets/styles/login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTAR</title>
-    
+    <link rel="stylesheet" href="/assets/styles/menu.css">
 </head>
+
 <body>
 
     <header>
@@ -33,11 +31,12 @@
                 </div>
                 <div class="nav">
                     <ul>
+                        <!-- <a href="#"><li>Home</li></a> -->
                       <a href="aboutsu.html"><li>About</li></a>
                       <a href="menu.html"><li>Menu</li></a>
-                      <a href="contactus.html"><li>Contact</li></a>
+                      <a href="#"><li>Contact</li></a>
                       <a href="booking.html"><li>Booking</li></a>
-                       <a href="rating.html"><li>Rating</li></a>
+                       <a href="#"><li>Rating</li></a>
                     </ul>
                 </div>   
             </div>
@@ -50,11 +49,12 @@
             </div>
             <div class="nav">
                 <ul>
+                     <!-- <a href="#"><li>Home</li></a> -->
                      <a href="aboutsu.html"><li>About</li></a>
                      <a href="menu.html"><li>Menu</li></a>
-                     <a href="contactus.html"><li>Contact</li></a>
+                     <a href="#"><li>Contact</li></a>
                      <a href="booking.html"><li>Booking</li></a>
-                      <a href="rating.html"><li>Rating</li></a>
+                      <a href="#"><li>Rating</li></a>
                 </ul>
             </div>
             <div class="account">
@@ -71,35 +71,41 @@
             </div>
         </div>
     </header>
-<div style="display: flex;justify-content: center;align-items: center;padding-top: 20px;">
 
-    <form>
-        <p>Name</p>
-        <input type="text" name="" id="">
-        <p>Email</p>
-        <input type="email" name="" id="">
-        <p>Phone Number</p>
-        <input type="text">
-        <p>Number of guests</p>
-        <select>
-            <option value="">1 person</option>
-            <option value="">2 person</option>
-            <option value="">3 person</option>
-            <option value="">4 person</option>
-            <option value="">5 person</option>
-            <option value="">6 person</option>
-            <option value="">7 person</option>
-            <option value="">8 person</option>
-        </select>
-        <p>Date</p>
-        <input type="date">
-        <p>Time</p>
-        <input type="time">
-        <button>Reset</button>
-        <button>Submit</button>
-    </form>
-</div>
-<script src="/assets/scripts/nav.js"></script>
+    <div class="login">
+        <div class="container">
+            <div class="form-section">
+                <h2>Sign In</h2>
+                <p style="color: gold;">Please enter your login details.</p>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div style="display: flex;justify-content: space-between;">
+                        <div>
+
+                            <input type="checkbox" id="remember-me">
+                            <label id="check" for="remember-me">Remember me</label>
+                        </div>
+                        <a id="forgpass" href="#">Forgot Password?</a>
+                    </div>
+                    
+                </div>
+                <div class="or">-or-</div>
+                <button class="btn">Log In</button>
+                <div class="social-btns">
+                    <button class="btn btn-facebook">Login with Facebook</button>
+                    <button class="btn btn-twitter">Login with Twitter</button>
+                    <button class="btn btn-google">Login with Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/scripts/nav.js"></script>
 </body>
-
 </html>
