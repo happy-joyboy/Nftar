@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: gold;
+}
+.form-section {
+    flex: 1;
+    padding: 10px;
+}
+.form-section h2 {
+    margin-bottom: 20px;
+}
+.form-section p {
+    color: gold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flexbox;
+    justify-content: space-between;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color:gold;
+    font-size: 14px;
+    text-align: left;
+}
+#check{
+    display: inline;
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+.form-group a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.social-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-btns .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.btn-facebook { background-color: #3b5998; }
+.btn-twitter { background-color: #1da1f2; }
+.btn-google { background-color: #db4437; }
+.image-section {
+    flex: 1;
+    background: url(jonathan-forage-1azAjl8FTnU-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+}
+.or{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.form-group input[type="text"]:hover,
+.form-group input[type="password"]:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    background-color: gold;
+    
+}
+#forgpass{color: gold;}
