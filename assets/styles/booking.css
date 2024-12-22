@@ -32,8 +32,6 @@ input {
 }
 
 input:hover {
-    height: 42px;
-    font-size: 22px;
     background-color: gold;
     cursor: pointer;
 }

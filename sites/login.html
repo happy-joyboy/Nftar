@@ -4,10 +4,8 @@
 <head>
     <link rel="shortcut icon" href="/assets/images/icon_shapes/Nftar_icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    
-    <!-- <link rel="stylesheet" href="2.css">
-    <link rel="stylesheet" href="saeed.css">
-    <link rel="stylesheet" href="nav.css"> -->
     <link rel="stylesheet" href="/assets/styles/mainStyle.css">
+    <link rel="stylesheet" href="/assets/styles/login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTAR</title>
@@ -74,38 +72,40 @@
         </div>
     </header>
 
-    <table>
-        <caption>Menu</caption>
-        <tr>
-            <td>
-                <a href="food.html" target="_self">
-                    <img src="/assets/images/menu/Categories/Food.jpg" alt="Food">
-                </a>
-                <a href="food.html" target="_self">
-                    <p>Food</p>
-                </a>
+    <div class="login">
+        <div class="container">
+            <div class="form-section">
+                <h2>Sign In</h2>
+                <p style="color: gold;">Please enter your login details.</p>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div style="display: flex;justify-content: space-between;">
+                        <div>
 
-            </td>
-            <td>
-                <a href="drinks.html">
-                    <img src="/assets/images/menu/Categories/Drinks.jpg" alt="Drinks">
-                </a>
-                <a href="drinks.html">
-                    <p>Drinks</p>
-                </a>
-
-            </td>
-            <td>
-                <a href="extra.html">
-                    <img src="/assets/images/menu/Categories/Extra.jpg" alt="Extra">
-                </a>
-                <a href="extra.html" target="_self">
-                    <p>Extra</p>
-                </a>
-            </td>
-        </tr>
-    </table>
+                            <input type="checkbox" id="remember-me">
+                            <label id="check" for="remember-me">Remember me</label>
+                        </div>
+                        <a id="forgpass" href="#">Forgot Password?</a>
+                    </div>
+                    
+                </div>
+                <div class="or">-or-</div>
+                <button class="btn">Log In</button>
+                <div class="social-btns">
+                    <button class="btn btn-facebook">Login with Facebook</button>
+                    <button class="btn btn-twitter">Login with Twitter</button>
+                    <button class="btn btn-google">Login with Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="/assets/scripts/nav.js"></script>
 </body>
-
 </html>
