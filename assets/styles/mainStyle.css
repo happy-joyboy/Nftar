@@ -83,6 +83,9 @@ header a{
     width: 60px;
     border-radius: 50%;
 }
+.logo h2 {
+    font-size: 50px;
+}
 
 .bar{
     display: none;
@@ -219,10 +222,17 @@ header a{
 .text{
     width: 30%;
 }
-
+.weBelieve{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif
+}
+.we{
+    margin-right: 1.5rem;
+}
 #weBelieveImg img{
-    width: 600px;
-    height: 400px;
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
 }
 
 /* .service-card{  
