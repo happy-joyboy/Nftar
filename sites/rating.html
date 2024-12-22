@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="saeed.css">
     <link rel="stylesheet" href="nav.css"> -->
     <link rel="stylesheet" href="/assets/styles/mainStyle.css">
+    <link rel="stylesheet" href="/assets/styles/rating.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFTAR</title>
-    <link rel="stylesheet" href="/assets/styles/categories.css">
 </head>
 
 <body>
@@ -24,15 +24,22 @@
                         <a href="/nftar.html">
                             <li><i class="fa-solid fa-house-chimney"></i></li>
                         </a>
-                        
+                        <a href="#">
+                            <li><i class="fa-solid fa-magnifying-glass" id="searchicon1"></i></li>
+                        </a>
+                        <div class="search" id="searchinput1">
+                            <input type="search">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
                         </div>
-                        <a href="login.html"><li><i class="fa-solid fa-user" id="user=mb"></i></li></a>
-
+                        <a href="#">
+                            <li><i class="fa-solid fa-user" id="user=mb"></i></li>
+                        </a>
 
                     </ul>
                 </div>
                 <div class="nav">
                     <ul>
+                        <!-- <a href="#"><li>Home</li></a> -->
                         <a href="aboutsu.html">
                             <li>About</li>
                         </a>
@@ -82,94 +89,57 @@
                     <a href="/nftar.html">
                         <li><i class="fa-solid fa-house-chimney"></i></li>
                     </a>
-                    
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass" id="searchicon2"></i></li>
+                    </a>
+                    <div class="search" id="searchinput2">
+                        <input type="search">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
                     </div>
-                    <a href="login.html"><li><i class="fa-solid fa-user" id="user=mb"></i></li></a>
-
+                    <a href="#">
+                        <li><i class="fa-solid fa-user" id="user"></i></li>
+                    </a>
 
                 </ul>
             </div>
         </div>
     </header>
 
-    <table>
-        <caption>Food</caption>
-        <tr>
-            <td><img src="/assets/images/menu/Food/Burger.jpeg" alt="Burger">
-                <p>Burger</p>
-                <p>
-                    
-                    $6.40
-                </p>
-            </td>
-            <td>
-                <img src="/assets/images/menu/Food/Steak.jpeg" alt="Steak">
-                <p>Steak</p>
-                <p>
-                    
-                    $17.00
-                </p>
-            </td>
-            <td><img src="/assets/images/menu/Food/Fish.jpeg" alt="Fish">
-                <p>Fish</p>
-                <p>
-                    
-                    $13.50
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="/assets/images/menu/Food/Calzone.jpeg" alt="Calzone">
-                <p>Calzone</p>
-                <p>
-                    
-                    $10.39
-                </p>
-            </td>
-            <td>
-                <img src="/assets/images/menu/Food/Beef Wellington.jpeg" alt="Beef Wellington">
-                <p>Beef Wellington</p>
-                <p>
-                    
-                    $33.99
-                </p>
-            </td>
-            <td><img src="/assets/images/menu/Food/Hot dogs.jpeg" alt="Hot dogs">
-                <p>Hot dogs</p>
-                <p>
-                   
-                    $6.29
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td><img src="/assets/images/menu/Food/Pizza.jpeg" alt="Pizza">
-                <p>Pizza</p>
-                <p>
-                    
-                    $11.24
-                </p>
-            </td>
-            <td>
-                <img src="/assets/images/menu/Food/Pasta.jpg" alt="Pasta">
-                <p>Pasta</p>
-                <p>
-                   
-                    $10.79
-                </p>
-            </td>
-            <td><img src="/assets/images/menu/Food/Fried chicken.jpeg" alt="Fried chicken">
-                <p>Fried chicken</p>
-                <p>
-                    
-                    $10.62
-                </p>
-            </td>
-        </tr>
-    </table>
 
-  
-    <script src="/assets/scripts/nav.js"></script>
+    <div id="container">
+
+        <form>
+            <h1>Rate us</h1>
+            <input type="text" placeholder="Enter your name ...">
+
+            <textarea placeholder="Tell us your opinion ..."></textarea>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <button>Submit</button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+
 </body>
 
 </html>

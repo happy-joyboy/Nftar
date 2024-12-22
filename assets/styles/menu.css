@@ -59,7 +59,6 @@ caption p,table p {
 
 caption p:hover,table p:hover {
     font-size: 32px;
-    background-color: gold;
 }
 
 a {
