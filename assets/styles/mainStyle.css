@@ -105,9 +105,14 @@ header a{
     align-items: center;
 }
 
+.header ul li{
+    transition: .3s;
+}
+
 .header ul li:hover{
     color: rgb(12, 55, 134);
-    transform: scale(1.5);
+    transform: scale(1.2);
+    text-decoration: underline;
 }
 
 .nav ul li{
@@ -241,8 +246,7 @@ header a{
 /* New Additions for Enhancements */
 nav ul li a:hover {
     color: #FAB12F;
-    text-decoration: underline;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    
 }
 
 .hero {
