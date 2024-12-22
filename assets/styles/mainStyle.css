@@ -97,6 +97,7 @@ header a{
 .header ul{
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
 .header ul li:hover{
@@ -291,6 +292,7 @@ nav ul li a:hover {
     color: #FAB12F;
     text-decoration: underline;
     transition: color 0.3s ease, text-decoration 0.3s ease;
+
 }
 
 

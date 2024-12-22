@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url('/assets/images/bg_random/hero.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+}
+
+.get-in-touch {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.get-in-touch h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-box {
+    background-color: gold;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+    flex: 1;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+}
+
+.contact-box p {
+    margin: 10px 0;
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
