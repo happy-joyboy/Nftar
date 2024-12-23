@@ -23,7 +23,7 @@
             $_SESSION['loggedInStatus'] = true;
             $_SESSION['LAST_ACTIVITY'] = time();
             $_SESSION['username'] = $username;
-            header("Location: /nftar.html");
+            header('Location: /sites/dashboard.php');
             exit();
         }
     }

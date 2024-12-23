@@ -20,6 +20,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirect to the login page
-header("Location: ../labs/login.php");
+header("Location: /sites/login.php");
 exit();
 ?>

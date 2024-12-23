@@ -1,6 +1,6 @@
 <?php
     session_start();
-    
+    include("db.php");
 
 
     if (isset($_SESSION['loggedInStatus'])) {
@@ -23,6 +23,19 @@
         }
 
         // $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $stmnt = $conn->prepare("INSERT INTO users (username, email, password, date_of_birth) VALUES (?, ?, ?, ?)");
+        $stmnt->bind_param("ssss", $username, $email, $password, $dob);
+        $stmnt->execute();
+
+        if ($stmnt->affected_rows > 0) {
+            echo "User created successfully.";
+            header('Location: /sites/login.php');
+            exit();
+        } else {
+            echo "Error creating user.";
+        }
+
 
     }
 ?>
