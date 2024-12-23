@@ -78,7 +78,7 @@
       <div class="signup-container">
         <h1>Sign Up</h1>
         <p>Create an account to get started</p>
-        <form action="../assets/backend/signup.php" method="POST">
+        <form action="../assets/backend/signup.php" method="POST" id="signupForm">
           <label for="username">Username</label>
           <input
             type="text"
@@ -124,5 +124,6 @@
       </div>
     </div>
     <script src="/assets/scripts/nav.js"></script>
+    <script src="/assets/scripts/pass_check.js"></script>
   </body>
 </html>

@@ -17,8 +17,10 @@ CREATE TABLE booking (
     phone_number VARCHAR(15) NOT NULL, -- Guest's phone number
     booking_date DATE NOT NULL, -- Booking date (HTML input type date)
     booking_time TIME NOT NULL, -- Booking time (HTML input type time)
+    number_of_guests INT NOT NULL, -- Number of guests
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp of booking creation
 );
+
 
 
 

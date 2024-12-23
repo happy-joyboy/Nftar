@@ -87,7 +87,7 @@
                         <li><i class="fa-solid fa-house-chimney"></i></li>
                     </a>
                     
-                    <a href="login.html">
+                    <a href="login.php">
                         <li><i class="fa-solid fa-user" id="user"></i></li>
                     </a>
 
@@ -128,24 +128,12 @@
                     <button class="btn btn-google">Login with Google</button>
                 </div>
                 <div>
-                    <p>Don`t have an account? <a href="signup.html">Sign Up here</a></p>
+                    <p>Don`t have an account? <a href="signup.php">Sign Up here</a></p>
                 </div>
             </div>
         </div>
     </div>
-                <div class="or">-or-</div>
-                
-                <div class="social-btns">
-                    <button class="btn btn-facebook">Login with Facebook</button>
-                    <button class="btn btn-twitter">Login with Twitter</button>
-                    <button class="btn btn-google">Login with Google</button>
-                </div>
-                <div>
-                    <p>Don`t have an account? <a href="signup.html">Sign Up here</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <script src="/assets/scripts/nav.js"></script>
 </body>
 </html>

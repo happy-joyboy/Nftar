@@ -5,9 +5,6 @@
     <link rel="icon" href="/assets/images/icon_shapes/Nftar_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
     <link rel="stylesheet" href="/assets/styles/booking.css">   
-    <!-- <link rel="stylesheet" href="2.css">
-    <link rel="stylesheet" href="saeed.css">
-    <link rel="stylesheet" href="nav.css"> -->
     <link rel="stylesheet" href="/assets/styles/mainStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,30 +64,30 @@
     </header>
 <div style="display: flex;justify-content: center;align-items: center;padding-top: 20px;">
 
-    <form>
+    <form action="/assets/backend/booking.php" method="post">
         <p>Name</p>
-        <input type="text" name="" id="">
+        <input type="text" name="name" id="name" required>
         <p>Email</p>
-        <input type="email" name="" id="">
+        <input type="email" name="email" id="email" required>
         <p>Phone Number</p>
-        <input type="text">
+        <input type="text" name="phone" id="phone" required>
         <p>Number of guests</p>
-        <select>
-            <option value="">1 person</option>
-            <option value="">2 person</option>
-            <option value="">3 person</option>
-            <option value="">4 person</option>
-            <option value="">5 person</option>
-            <option value="">6 person</option>
-            <option value="">7 person</option>
-            <option value="">8 person</option>
+        <select name="guests" id="guests" required>
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persons</option>
+            <option value="4">4 persons</option>
+            <option value="5">5 persons</option>
+            <option value="6">6 persons</option>
+            <option value="7">7 persons</option>
+            <option value="8">8 persons</option>
         </select>
         <p>Date</p>
-        <input type="date">
-        <p>Time</p>
-        <input type="time">
-        <button>Reset</button>
-        <button>Submit</button>
+        <input type="date" name="date" id="date" required>
+        <p>Time (from 8:30 AM to 11:30 PM)</p>
+        <input type="time" name="time" id="time" min="08:30" max="23:30" required>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
     </form>
 </div>
 <script src="/assets/scripts/nav.js"></script>
