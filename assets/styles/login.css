@@ -28,7 +28,7 @@
 }
 .form-section p {
     color: gold;
-    font-size: 14px;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 .form-group {
@@ -117,6 +117,9 @@
     
 }
 #forgpass{color: gold;}
+.dd{
+    margin-top: 15px;
+}
  div p a{
     color: #2575fc;
     text-decoration: none;
