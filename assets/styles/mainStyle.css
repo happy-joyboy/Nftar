@@ -181,7 +181,6 @@ header a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }   
 
 .hero-content {
@@ -192,13 +191,13 @@ header a{
 
 
 .hero h1 {
-    color: #c6c60a;
+    color: gold;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    color: #c6c60a;
+    color: gold;
     font-size: 1.2rem;
 }
 
