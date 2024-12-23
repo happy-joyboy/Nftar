@@ -1,6 +1,5 @@
 <?php 
-    session_start();
-    include("../backend/login.php");
+    include("../assets/backend/login.php")
 
 ?>
 
@@ -102,7 +101,7 @@
             <div class="form-section">
                 <h1>Sign In</h1>
                 <p style="color: gold;">Please enter your login details.</p>
-                <form action="login.php" method="POST">
+                <form action="../assets/backend/login.php" method="POST">
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" id="username" name="username" placeholder="Username" required>

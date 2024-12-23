@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("db_connection.php");
+    include("db.php");
 
 
     // Check if already logged in
@@ -14,7 +14,7 @@
         $password = $_POST['password'];
 
         // Prepared statements to prevent SQL injection # be safe be secure
-        $stmt = $conn->prepare("SELECT * FROM restaurant WHERE username = ? AND password = ?");
+        $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
         $stmt->bind_param("ss", $username, $password);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -22,6 +22,7 @@
         if($result->num_rows > 0){
             $_SESSION['loggedInStatus'] = true;
             $_SESSION['LAST_ACTIVITY'] = time();
+            $_SESSION['username'] = $username;
             header("Location: /nftar.html");
             exit();
         }
