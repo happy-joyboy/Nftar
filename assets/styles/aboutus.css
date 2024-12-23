@@ -8,10 +8,9 @@ body {
 }
 
 .container {
-  width: 40%;
+  width: 90%;
   margin: 40px auto;
   padding: 20px;
-  width: 40%;
   border-radius: 15px;
   font-size: 20px;
   font-weight: bold;
@@ -32,13 +31,13 @@ body {
   background-color: gold;
   text-align: left;
   padding: 15px;
-  border-left: 6px solid gold;
+  border-left: 6px solid rgb(23, 19, 1);
   border-radius: 15px;
-  line-height: 1.6;
+  line-height: 1.4;
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .buttons {
@@ -50,7 +49,7 @@ body {
 .buttons a {
   text-decoration: none;
   padding: 5px 10px;
-  color: black;
+  color: white;
   background-color: gold;
   border-radius: 20px;
   transition: background-color 0.3s ease;
@@ -59,4 +58,5 @@ body {
 
 .buttons a:hover {
   font-size: 22px;
+  background-color: rgb(12, 10, 0);
 }

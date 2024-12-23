@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+  background-image: url("/assets/images/bg_random/hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.container22 {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-container {
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.signup-container h1 {
+  margin-bottom: 5px;
+  color: gold;
+}
+
+.signup-container p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.signup-container label {
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  color: gold;
+}
+
+.signup-container input, .signup-container select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.signup-container input:focus, .signup-container select:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 4px rgba(37, 117, 252, 0.5);
+}
+
+.signup-container button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #2575fc;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+  background-color: #1a5ebc;
+}
+
+.signup-container small {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.signup-container a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.signup-container a:hover {
+  text-decoration: underline;
+}
+
