@@ -238,6 +238,7 @@ header a{
     width: 550px;
     height: 350px;
     border-radius: 15px;
+    margin: 50px 0;
 }
 
 /* .service-card{  
@@ -431,6 +432,12 @@ nav ul li a:hover {
 
     .hero p {
         font-size: 1rem;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
