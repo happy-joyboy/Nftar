@@ -63,23 +63,28 @@
     font-size: 14px;
 }
 .btn {
-    display: inline-block;
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
+    height: 35px;
+    margin-top: 10px;
     border: none;
     border-radius: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:gold;
+    box-shadow: 0 0 2px black;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    height: 45px;
+    font-size: 22px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
 }
 .social-btns {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
+   
 }
 .social-btns .btn {
     display: flex;
@@ -116,3 +121,6 @@
     color: #2575fc;
     text-decoration: none;
 }
+div p a:hover {
+    text-decoration: underline;
+  }

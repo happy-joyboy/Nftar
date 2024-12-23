@@ -59,22 +59,23 @@ body {
   box-shadow: 0 0 4px rgba(37, 117, 252, 0.5);
 }
 
-.signup-container button {
+button {
   width: 95%;
-  padding: 10px;
+  height: 40px;
   margin-top: 20px;
-  background-color: #2575fc;
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: bold;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color:gold;
+  box-shadow: 0 0 2px black;
+  transition: 0.3s;
 }
 
-.signup-container button:hover {
-  background-color: #1a5ebc;
+button:hover {
+  height: 52px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .signup-container small {
