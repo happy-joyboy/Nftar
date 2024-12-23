@@ -6,7 +6,11 @@ body {
   background-attachment: fixed;
   color: black;
 }
-
+.contt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   width: 90%;
   margin: 35px auto;
@@ -24,8 +28,6 @@ body {
   display: inline-block;
   border-radius: 20px;
   padding: 0 5px;
-}
-.container h2{
   margin:10px 0 ;
 }
 
@@ -61,4 +63,47 @@ body {
 .buttons a:hover {
   font-size: 22px;
   background-color: rgb(12, 10, 0);
+}
+@media (max-width: 1025px) {
+  .contt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .container {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .container h2 {
+    font-size: 1.5em;
+  }
+
+  .container p {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .container {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .container h2 {
+    font-size: 1.2em;
+  }
+
+  .container p {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
