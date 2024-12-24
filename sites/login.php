@@ -141,6 +141,10 @@
         <p>&copy; 2024 Restaurant. All rights reserved.</p>
       </div>
   </footer>
+  <?php if($_SESSION['failedlogin']){
+      echo '<script>alert("Login Failed, Check your username and password")</script>';
+      $_SESSION['failedlogin'] = false;
+  } ?>
     <script src="/assets/scripts/nav.js"></script>
 </body>
 </html>

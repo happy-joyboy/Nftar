@@ -123,9 +123,14 @@
 
           <button type="submit"  name="signup" value="signup" >Create Account</button>
         </form>
-        <p>Already have an account <a href="login.html">Log in here</a></p>
+        <p>Already have an account <a href="login.php">Log in here</a></p>
       </div>
     </div>
+    <footer>
+      <div>
+        <p>&copy; 2024 Restaurant. All rights reserved.</p>
+      </div>
+  </footer>
     <script src="/assets/scripts/nav.js"></script>
     <script src="/assets/scripts/pass_check.js"></script>
   </body>

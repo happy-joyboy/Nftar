@@ -24,7 +24,12 @@
             $_SESSION['LAST_ACTIVITY'] = time();
             $_SESSION['username'] = $username;
             $session_expired=false;
+            $_SESSION['failedlogin'] = false;
             header('Location: /sites/dashboard.php');
+            exit();
+        }else{
+            $_SESSION['failedlogin'] = true;
+            header('Location: /sites/login.php');
             exit();
         }
     }
