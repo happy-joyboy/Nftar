@@ -11,32 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About US</title>
     <link rel="stylesheet" href="/assets/styles/mainStyle.css">
-    <style>
-    
-        .dashboard {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .logout-btn {
-            background-color: #ff0057;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .logout-btn:hover {
-            background-color: #e6004c;
-        }
-        .bookings {
-            margin-top: 20px;
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/styles/dashboard.css">
   </head>
   <body>
     <header>
@@ -45,7 +20,7 @@
                 <div class="account">
                     <ul>
                         <a href="/nftar.html"><li><i class="fa-solid fa-house-chimney"></i></li></a>
-                        <a href="/assets/backend/logout.php"><li><i class="fa-solid fa-person-running" style="color: #ff1c38;font-size:1.3rem"></i></li></a>
+                        <a href="/assets/backend/logout.php" ><li><i class="fa-solid fa-person-running" style="color: #ff1c38;font-size:1.3rem"></i></li></a>
 
                         <!-- <a href="login.html"><li><i class="fa-solid fa-user" id="user=mb"></i></li></a> -->
                         
@@ -88,18 +63,41 @@
             </div>
         </div>
     </header>
+    <h2 class="title">Welcome <?php echo  $_SESSION['username']?></h2>
+    <div class="container">
 
-    <div class="bookings">
-        <h2>Your Bookings</h2>
-        <ul>
-            <?php if (!empty($_SESSION["bookings"])): ?>
-                <?php foreach ($_SESSION["bookings"] as $booking): ?>
-                    <li>Booking on <?php echo htmlspecialchars($booking['booking_date']); ?> at <?php echo htmlspecialchars($booking['booking_time']); ?> for <?php echo htmlspecialchars($booking['number_of_guests']); ?> guests.</li>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <li>No bookings found.</li>
-            <?php endif; ?>
-        </ul>
+        <?php if (!empty($_SESSION["bookings"])): ?>
+            <?php foreach (array_reverse($_SESSION["bookings"]) as $index => $booking): ?>
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2><?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?></h2>
+                            <h3>
+                                <?php 
+                                    if ($_SESSION['username'] == 'kaneki') {
+                                        echo $booking['guest_name'];
+                                    } else {
+                                        echo 'Booked';
+                                    }
+                                ?>
+                            </h3>
+                            <p>Booking on <?php echo $booking['booking_date']; ?> at <?php echo $booking['booking_time']; ?> for <?php echo $booking['number_of_guests']; ?> guests.</p>
+                            <a href="/sites/menu.html">Read Menu</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2>00</h2>
+                        <h3>No Bookings</h3>
+                        <p>No bookings found.</p>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
     </div>
     
     <script src="/assets/scripts/nav.js"></script>

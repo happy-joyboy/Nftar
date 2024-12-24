@@ -24,9 +24,7 @@ if ($result->num_rows > 0) {
 
 $_SESSION["bookings"] = $bookings;
 
-// Close the statement and connection
-$stmt->close();
-$conn->close();
+
 ?>
 
 

@@ -3,7 +3,7 @@ include("db.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $guest_name = $_POST['name'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $phone_number = $_POST['phone'];
     $booking_date = $_POST['date'];
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare the SQL statement
     $stmt = $conn->prepare("INSERT INTO booking (guest_name, email, phone_number, booking_date, booking_time, number_of_guests) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssi", $guest_name, $email, $phone_number, $booking_date, $booking_time, $number_of_guests);
+    $stmt->bind_param("sssssi", $name, $email, $phone_number, $booking_date, $booking_time, $number_of_guests);
 
 
     if ($stmt->execute()) {
@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $stmt->error;
     }
 
-    $stmt->close();
     $conn->close();
 
 }
