@@ -2,13 +2,17 @@
 include("db.php");
 session_start();
 
-if (!isset($_SESSION['loggedInStatus'])) {
-    header('Location: ../sites/login.php');
-    exit();
-}
+// if (!isset($_SESSION['loggedInStatus'])) {
+//     header('Location: ../sites/login.php');
+//     exit();
+// }
 
 $username = $_SESSION['username'];
 
+
+if(!isset(($username))) {
+    $username = "";
+}
 if ($username === 'kaneki') {
 
     $sql = "SELECT * FROM booking";

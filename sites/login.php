@@ -136,7 +136,11 @@
             </div>
         </div>
     </div>
-
+    <footer>
+      <div>
+        <p>&copy; 2024 Restaurant. All rights reserved.</p>
+      </div>
+  </footer>
     <script src="/assets/scripts/nav.js"></script>
 </body>
 </html>
