@@ -7,9 +7,32 @@ if (!isset($_SESSION['loggedInStatus'])) {
     exit();
 }
 
-// Query to fetch all data from the booking table
-$sql = "SELECT * FROM booking";
-$result = $conn->query($sql);
+$username = $_SESSION['username'];
+
+if ($username === 'kaneki') {
+    $sql = "SELECT * FROM booking";
+    $result = $conn->query($sql);
+} else {
+    // Fetch email of the current user from the users table
+    $stmt = $conn->prepare("SELECT email FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        $email = $user['email'];
+        
+        // Use the email to find any booking
+        $stmt = $conn->prepare("SELECT * FROM booking WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+    } else {
+        echo "No user found with the username.";
+    }
+}
+
 
 $bookings = [];
 
@@ -26,37 +49,3 @@ $_SESSION["bookings"] = $bookings;
 
 
 ?>
-
-
-<?php
-// include("db.php");
-// session_start();
-
-// if (!isset($_SESSION['loggedInStatus'])) {
-//     header('Location: ../sites/login.php');
-//     exit();
-// }
-
-// $username = $_SESSION['username'];
-
-// // Fetch bookings based on the username
-// $stmt = $conn->prepare("SELECT * FROM booking WHERE username = ?");
-// $stmt->bind_param("s", $username);
-// $stmt->execute();
-// $bookings = $stmt->get_result();
-
-// $bookings_data = [];
-// while ($row = $bookings->fetch_assoc()) {
-//     $bookings_data[] = $row;
-// }
-
-// // Close the statement and connection
-// $stmt->close();
-// $conn->close();
-
-// // Return the bookings data as a multidimensional array
-// header('Content-Type: application/json');
-// echo json_encode($bookings_data);
-?>
-
-
