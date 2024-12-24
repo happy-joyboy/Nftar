@@ -35,6 +35,22 @@ Hi 👋, Welcome to our restaurant "NFTAR". This project is a web-based applicat
 
 NFTAR is dedicated to providing an exceptional dining experience. Our web application ensures that our customers can easily access our services and enjoy their time at our restaurant.
 
+## Project Gallery
+
+<div align="center">
+  <img src="/assets/images/site/Screenshot 1.png" height="200" alt="Project Image 1" />
+  <img width="12" />
+  <img src="/assets/images/site/Screenshot 2.png" height="200" alt="Project Image 2" />
+  <img width="12" />
+  <img src="/assets/images/site/Screenshot 3.png" height="200" alt="Project Image 3" />
+  <img width="12" />
+  <img src="/assets/images/site/Screenshot 4.png" height="200" alt="Project Image 4" />
+  <img width="12" />
+  <img src="/assets/images/site/Screenshot 5.png" height="200" alt="Project Image 5" />
+  <img width="12" />
+  <img src="/assets/images/site/Screenshot 6.png" height="200" alt="Project Image 6" />
+</div>
+
 ## Contributors
 
 We would like to thank the following contributors for their hard work and dedication to this project:
