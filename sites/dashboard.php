@@ -1,6 +1,31 @@
 <?php 
     include("../assets/backend/dashboard.php");
     $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $email = $_POST['email'];
+        
+        $stmt = $conn->prepare("SELECT * FROM booking WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        $bookings_data = [];
+        while ($row = $result->fetch_assoc()) {
+            // Remove the seconds part from booking_time
+            if (isset($row['booking_time'])) {
+                $row['booking_time'] = date('H:i', strtotime($row['booking_time']));
+            }
+            $bookings_data[] = $row;
+        }
+        
+        $_SESSION["bookings"] = $bookings_data; 
+        $_SESSION["search"] = true;
+    }else{
+        $_SESSION["search"] = false;
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +100,7 @@
                             <h2><?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?></h2>
                             <h3>
                                 <?php 
-                                    if ($_SESSION['username'] == 'kaneki') {
+                                    if ($_SESSION['username'] == 'kaneki' || $_SESSION["search"]) {
                                         echo $booking['guest_name'];
                                     } else {
                                         echo 'Booked';
@@ -104,7 +129,7 @@
     <div class="space">
         <h2 class="title">cant find your reservation ?</h2>
         <div class="box">
-            <form action="../assets/backend/dashboard.php" method="POST" class="form">
+            <form action="dashboard.php" method="POST" class="form">
                 <input type="email" class="input" name="email" placeholder="Enter your email" required>
                 <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
             </form>
