@@ -1,86 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .dashboard {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .logout-btn {
-            background-color: #ff0057;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .logout-btn:hover {
-            background-color: #e6004c;
-        }
-    </style>
-</head>
-<body>
-    <div class="dashboard">
-        <h1>Welcome to the Dashboard</h1>
-        <p>Hello, <?php echo $_SESSION['username']; ?>!</p>
-        <form action="../assets/backend/logout.php" method="post">
-            <button type="submit" class="logout-btn">Logout</button>
-        </form>
-    </div>
-</body>
-</html>
+<h1 align="left" Welcome to  our restaurant  "NFTAR"</h1>
 
+###
 
+<h2 align="left">This is a res</h2>
 
+###
 
+<h2 align="center">-- Created with --</h2>
 
+###
 
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+</div>
 
+###
 
-<?php
-include("db.php");
+<h2 align="left">About us</h2>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $guests = $_POST['guests'];
-    $date = $_POST['date'];
-    $time = $_POST['time'];
-
-    // Prepare the SQL statement
-    $stmt = $conn->prepare("INSERT INTO booking (name, email, phone, guests, date, time) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssiss", $name, $email, $phone, $guests, $date, $time);
-
-
-    if ($stmt->execute()) {
-        echo "Booking successful!";
-        header("Location: ../sites/thx.html");
-        exit();
-    } else {
-        echo "Error: " . $stmt->error;
-    }
-
-
-    $stmt->close();
-    $conn->close();
-}
-?>
+###
