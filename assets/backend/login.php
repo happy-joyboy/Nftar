@@ -23,6 +23,7 @@
             $_SESSION['loggedInStatus'] = true;
             $_SESSION['LAST_ACTIVITY'] = time();
             $_SESSION['username'] = $username;
+            $session_expired=false;
             header('Location: /sites/dashboard.php');
             exit();
         }

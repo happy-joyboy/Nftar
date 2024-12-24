@@ -1,5 +1,8 @@
 <?php 
-    include("../assets/backend/login.php")
+    include("../assets/backend/login.php");
+    $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
+
+
 
 ?>
 

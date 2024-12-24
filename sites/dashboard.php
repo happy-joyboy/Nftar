@@ -1,5 +1,6 @@
 <?php 
-    include("../assets/backend/dashboard.php")
+    include("../assets/backend/dashboard.php");
+    $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
 ?>
 
 <!DOCTYPE html>
@@ -100,6 +101,17 @@
         <?php endif; ?>
     </div>
     
+    <div class="space">
+        <h2 class="title">cant find your reservation ?</h2>
+        <div class="box">
+            <form action="../assets/backend/dashboard.php" method="POST" class="form">
+                <input type="email" class="input" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+
     <script src="/assets/scripts/nav.js"></script>
   </body>
 </html>

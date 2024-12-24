@@ -10,10 +10,12 @@ if (!isset($_SESSION['loggedInStatus'])) {
 $username = $_SESSION['username'];
 
 if ($username === 'kaneki') {
+
     $sql = "SELECT * FROM booking";
     $result = $conn->query($sql);
+
 } else {
-    // Fetch email of the current user from the users table
+
     $stmt = $conn->prepare("SELECT email FROM users WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
@@ -28,24 +30,19 @@ if ($username === 'kaneki') {
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $result = $stmt->get_result();
-    } else {
-        echo "No user found with the username.";
     }
 }
 
-
-$bookings = [];
-
-if ($result->num_rows > 0) {
-    // Fetch all rows and store them in the array
-    while ($row = $result->fetch_assoc()) {
-        $bookings[] = $row;
+$bookings_data = [];
+while ($row = $result->fetch_assoc()) {
+    // Remove the seconds part from booking_time
+    if (isset($row['booking_time'])) {
+        $row['booking_time'] = date('H:i', strtotime($row['booking_time']));
     }
-} else {
-    echo "No data found in the booking table.";
+    $bookings_data[] = $row;
 }
 
-$_SESSION["bookings"] = $bookings;
+$_SESSION["bookings"] = $bookings_data;
 
 
 ?>

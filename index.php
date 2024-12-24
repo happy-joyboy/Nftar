@@ -1,4 +1,8 @@
 <?php
+session_start();
+$_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
+
+
 header("Location: nftar.html");
 exit();
 ?>
