@@ -6,62 +6,80 @@ body {
     color: black;
 }
 
-table,
-td {
-    width: 100%;
+.menu-container {
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-td {
-    width: 100px;
-}
-
-caption {
+.menu-container h2 {
     font-size: 60px;
+    width: 68%;
     background-color: gold;
     border-radius: 30px;
-    margin: 20px 100px 40px;
     transition: 0.3s;
     box-shadow: 0 0 2px black;
 }
 
-caption:hover {
+.menu-container h2:hover {
     font-size: 62px;
     box-shadow: 0 0 2px black;
 }
 
-table img {
-    width: 270px;
-    height: 480px;
-    border: 2px gold solid;
-    border-radius: 30px;
-    transition: 0.3s;
-    box-shadow: 0 0 5px white;
-    box-shadow: 0 0 2px black;
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
 }
 
-table img:hover {
-    width: 279px;
-    height: 496px;
-    border: 5px  gold solid;
+.menu-item {
+    text-align: center;
+    max-width: 270px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid gold;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px white, 0 0 2px black;
+}
+
+.menu-item img:hover {
+    width: 103%;
+    height: auto;
+    border: 5px solid gold;
     cursor: pointer;
     box-shadow: 0 0 2px black;
 }
 
-caption p,table p {
+.menu-item p {
     font-size: 30px;
     transition: 0.3s;
     background-color: gold;
     border-radius: 15px;
-    margin: 40px 100px;
+    margin-top: 10px;
     box-shadow: 0 0 2px black;
 }
 
-caption p:hover,table p:hover {
+.menu-item p:hover {
     font-size: 32px;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 600px) {
+    .menu-items {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-item {
+        max-width: 100%;
+    }
 }

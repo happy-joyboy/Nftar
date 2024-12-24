@@ -45,7 +45,28 @@ body {
     margin: 10px 0;
 }
 @media (max-width: 768px) {
-    .contact-container {
+    .get-in-touch h1 {
+        font-size: 2em;
+    }
+
+    .contact-box {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .contact-container{
+        display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .get-in-touch h1 {
+        font-size: 1.5em;
+    }
+
+    .contact-box {
+        max-width: 100%;
+        margin: 0 5px;
     }
 }
